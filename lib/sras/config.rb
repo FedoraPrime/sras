@@ -8,11 +8,11 @@ module SRAS
     module Config
         if ENV['SRAS_CONFIG_FILE']
             config_file = ENV['SRAS_CONFIG_FILE']
-        elsif File.exists?("../config/config.yml")
+        elsif File.exist?("../config/config.yml")
             config_file = "../config/config.yml"
-        elsif File.exists?(File.expand_path('~/.srasrc'))
+        elsif File.exist?(File.expand_path('~/.srasrc'))
             config_file = File.expand_path('~/.srasrc')
-        elsif File.exists?('/etc/sras/sras.conf')
+        elsif File.exist?('/etc/sras/sras.conf')
             config_file = '/etc/sras/sras.conf'
         else
             raise "Couldn't find SRAS config file"
