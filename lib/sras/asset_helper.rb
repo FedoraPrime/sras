@@ -12,11 +12,11 @@ module SRAS
             asset_file = asset.base_dir + '/' + asset.sha256[0..2] + '/' + asset.sha256[3..5] + '/' + asset.sha256
             asset_data = ''
 
-            if File.exists?(asset_file + '.gz')
+            if File.exist?(asset_file + '.gz')
                 Zlib::GzipReader.open(asset_file + '.gz') do |file|
                     asset_data = file.read
                 end
-            elsif File.exists?(asset_file)
+            elsif File.exist?(asset_file)
                 File.open(asset_file) do |file|
                     asset_data = file.read
                 end
@@ -32,7 +32,7 @@ module SRAS
             # see if asset file with this hash already exists.  if it
             # does, then we don't need to overwrite it with identical
             # data...
-            if File.exists?(asset_file + '.gz') || File.exists?(asset_file)
+            if File.exist?(asset_file + '.gz') || File.exist?(asset_file)
                 return
             end 
 
