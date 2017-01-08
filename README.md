@@ -6,6 +6,9 @@ NOTICE
 
 On 12-18-2014, coyled declared the SRAS system abandonware. Recently as of Ruby 2.0 people have had issues installing, as several dependencies require Ruby 2.0 or greater but some of the commands used had been depreciated as of 2.0 (it's noted that File.exists was depreciated at 2.1 but we get the error with anything 2.0 or above). I've decided to take up this project & tinker with it in my spare time since this system is still used by so many grids out there. Please note this should be considered an ALPHA build, but seems to be stable.
 
+- Mike Solstice
+  aka Micah Lunasea 
+
 
 Features
 --------
