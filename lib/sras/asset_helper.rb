@@ -86,7 +86,8 @@ module SRAS
                 'image/jpeg'                            => 19,
                 'application/x-metaverse-animation'     => 20,
                 'application/x-metaverse-gesture'       => 21,
-                'application/x-metaverse-simstate'      => 22
+                'application/x-metaverse-simstate'      => 22,
+                'application/vnd.ll.mesh'               => 49
             }
 
             if asset_type[request]
