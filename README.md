@@ -16,6 +16,7 @@ Features
  * Asset de-duplication
  * Compressed asset storage on disk
  * Ability to disable serving of specific assets without deleting
+ * Mesh MIME type support added (thx Hack13) 
 
 
 Install
